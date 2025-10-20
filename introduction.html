@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>いしくらさくら — 自己紹介</title>
+  <style>
+    :root{ --bg:#0f172a; --card:#0b1220; --accent:#ff7aa2; --muted:#94a3b8 }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Noto Sans JP", sans-serif; background:linear-gradient(180deg,#071029 0%, #071633 60%); color:#e6eef8; min-height:100vh; display:flex; align-items:center; justify-content:center; padding:32px}
+    .card{width:min(920px,96%); background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border-radius:14px; box-shadow: 0 8px 30px rgba(2,6,23,0.6); overflow:hidden; display:grid; grid-template-columns: 320px 1fr}
+    header{padding:28px 24px; background:linear-gradient(135deg, rgba(255,122,162,0.12), rgba(255,190,200,0.04)); display:flex; gap:16px; align-items:center}
+    .avatar{width:120px; height:120px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,var(--accent), #ffd6e8); color:#0b1220; font-weight:700; font-size:36px; box-shadow:0 6px 20px rgba(255,122,162,0.12) inset}
+    .name{line-height:1}
+    .name h1{margin:0;font-size:22px;letter-spacing:0.02em}
+    .name p{margin:6px 0 0 0;color:var(--muted);font-size:14px}
+    .content{padding:28px}
+    h2{margin:0 0 12px 0;font-size:18px}
+    p{color:#cfe6ff; margin:0 0 12px 0}
+    .tags{display:flex; gap:8px; flex-wrap:wrap}
+    .tag{background:rgba(255,255,255,0.03); padding:8px 12px; border-radius:999px; font-size:13px; color:var(--muted)}
+    .row{display:flex; gap:16px; align-items:flex-start}
+    .skills{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:10px}
+    .skill{background:rgba(255,255,255,0.02); padding:10px;border-radius:8px; font-size:14px}
+    .contact{margin-top:18px}
+    .btn{display:inline-block; padding:10px 14px; border-radius:10px; background:var(--accent); color:#091125; font-weight:700; text-decoration:none}
+    footer{padding:18px 24px; background:linear-gradient(180deg, rgba(0,0,0,0.03), transparent); color:var(--muted); font-size:13px}
+    @media(max-width:800px){.card{grid-template-columns:1fr} header{justify-content:center} .row{flex-direction:column} .skills{grid-template-columns:repeat(2,1fr)} }
+  </style>
+</head>
+<body>
+  <article class="card" role="article" aria-labelledby="name">
+    <header>
+      <div class="avatar" aria-hidden="true">いS</div>
+      <div class="name">
+        <h1 id="name">いしくら さくら</h1>
+        <p>好奇心旺盛なクリエイター・問題解決好き</p>
+        <div class="tags" style="margin-top:10px">
+          <span class="tag">フロントエンド</span>
+          <span class="tag">デザイン</span>
+          <span class="tag">企画</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <section aria-labelledby="about">
+        <h2 id="about">About — 自己紹介</h2>
+        <p>はじめまして、いしくらさくらです。日常の小さな困りごとを見つけて、楽しく解決することが好きです。技術的なものからクリエイティブな表現まで、幅広く手を動かして取り組みます。</p>
+      </section>
+
+      <section aria-labelledby="skills" style="margin-top:18px">
+        <h2 id="skills">Skills — 得意なこと</h2>
+        <div class="skills">
+          <div class="skill"><strong>HTML / CSS</strong><div style="color:var(--muted); font-size:13px">レスポンシブで見栄えのするUIを作ります</div></div>
+          <div class="skill"><strong>JavaScript</strong><div style="color:var(--muted); font-size:13px">簡単なインタラクションやツール作成</div></div>
+          <div class="skill"><strong>デザイン</strong><div style="color:var(--muted); font-size:13px">UI/サムネイル・配色設計</div></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="hobby" style="margin-top:18px">
+        <h2 id="hobby">Hobby — 趣味</h2>
+        <p>写真を撮ること、散歩しながらカフェ探し、ゲームと短編の読書。週末は気になる町にふらっと出かけることが多いです。</p>
+      </section>
+
+      <section aria-labelledby="contact" class="contact">
+        <h2 id="contact">Contact — 連絡</h2>
+        <p>ご依頼やお話のご相談は下のボタンからどうぞ（ダミーリンクです）。</p>
+        <a class="btn" href="#">メッセージを送る</a>
+      </section>
+    </div>
+
+    <footer>
+      <div>いしくらさくら — 小さなアイデアを形にするのが好きです。</div>
+    </footer>
+  </article>
+</body>
+</html>
